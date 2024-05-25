@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-size: 15px;
+}
+.bg-head {
+	background-image: url(../images/bg-header-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.options div {
+	@apply text-Desaturated-Dark-Cyan font-bold bg-neutral-Light-Grayish-Cyan-Filter_Tablets p-2 rounded-md text-xl cursor-pointer hover:bg-Desaturated-Dark-Cyan hover:text-white;
+}
+.features.active::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 5px;
+	@apply bg-Desaturated-Dark-Cyan;
+	left: 0;
+	top: 0;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
